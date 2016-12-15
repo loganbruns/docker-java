@@ -14,6 +14,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.dockerjava.api.model.ContainerConfig;
 import com.github.dockerjava.api.model.HostConfig;
 import com.github.dockerjava.api.model.NetworkSettings;
+import com.github.dockerjava.api.model.Node;
 import com.github.dockerjava.api.model.Volume;
 import com.github.dockerjava.api.model.VolumeBind;
 import com.github.dockerjava.api.model.VolumeBinds;
@@ -77,6 +78,9 @@ public class InspectContainerResponse {
     @JsonProperty("NetworkSettings")
     private NetworkSettings networkSettings;
 
+    @JsonProperty("Node")
+    private Node node;
+
     @JsonProperty("Path")
     private String path;
 
@@ -139,6 +143,10 @@ public class InspectContainerResponse {
 
     public NetworkSettings getNetworkSettings() {
         return networkSettings;
+    }
+
+    public Node getNode() {
+        return node;
     }
 
     public String getResolvConfPath() {
