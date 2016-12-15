@@ -1,5 +1,5 @@
 <ivy-module xmlns:m="http://ant.apache.org/ivy/maven" version="2.0">
-	<info organisation="com.github.docker-java" module="docker-java" revision="3.0.4-LI-1" status="release" publication="20160815105953">
+	<info organisation="com.github.docker-java" module="docker-java" revision="3.0.4-LI-2" status="release" publication="20160815105953">
 		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 		<description homepage="https://github.com/docker-java/docker-java">
 		Java API Client for Docker
